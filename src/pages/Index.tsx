@@ -205,10 +205,7 @@ const Index = () => {
       {loaded && <Navigation />}
       {loaded && <ScrollProgress />}
 
-      {/* Fixed background About section */}
-      <div className="fixed inset-0 z-0 bg-white text-black">
-        <About />
-      </div>
+
 
       {/* Hero */}
       <section className="relative h-screen bg-black flex flex-col px-6 py-12 md:px-16 md:py-16 z-20 overflow-hidden">
@@ -264,7 +261,11 @@ const Index = () => {
 
       {/* Content stack */}
       <div className="relative z-20 w-full bg-transparent">
-        <div id="about" className="h-screen w-full pointer-events-none" />
+        <div className="bg-white text-black relative z-20">
+          <SectionReveal>
+            <About />
+          </SectionReveal>
+        </div>
 
         <div id="work" className="bg-black text-white relative z-20">
           <SectionReveal>
