@@ -89,24 +89,26 @@ const ScrollStackCard = ({ project, index }: ScrollStackCardProps) => {
           </div>
         </div>
 
-        <StarBorder
-          as="a"
-          href={project.links.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="live-btn-star"
-          color="#f6d365, #fda085"
-          speed="3s"
-        >
-          {project.cta}
-        </StarBorder>
+        <div className="flex items-center gap-3 mt-2 md:mt-0">
+          <StarBorder
+            as="a"
+            href={project.links.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-btn-star"
+            color="#f6d365, #fda085"
+            speed="3s"
+          >
+            {project.cta}
+          </StarBorder>
 
-        <Link
-          to={`/projects/${project.slug}`}
-          className="ml-3 px-4 py-2 text-[11px] font-bold uppercase tracking-wider border border-white/20 text-white/60 hover:text-white hover:border-white/50 transition-all duration-300 whitespace-nowrap hidden md:inline-block"
-        >
-          Case Study →
-        </Link>
+          <Link
+            to={`/projects/${project.slug}`}
+            className="px-4 py-[0.6rem] md:py-2 text-[10px] md:text-[11px] font-bold uppercase tracking-wider border border-white/20 text-white/60 hover:text-white hover:border-white/50 transition-all duration-300 whitespace-nowrap rounded-full"
+          >
+            Case Study →
+          </Link>
+        </div>
       </div>
 
       <div className="content-grid">
