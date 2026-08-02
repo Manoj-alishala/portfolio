@@ -41,7 +41,7 @@ const About = () => {
   const opacity5 = useTransform(scrollY, [vh * 0.3, vh * 0.6], [0, 1]);
 
   return (
-    <section className="min-h-screen w-full bg-white text-black font-sans px-6 md:px-12 lg:px-16 flex items-start justify-center relative pt-32 pb-16">
+    <section className="min-h-screen w-full bg-white text-black font-sans px-6 md:px-12 lg:px-16 flex items-start justify-center relative pt-24 pb-4">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-12 w-full max-w-[1600px] mx-auto">
 
         {/* Left Column: Context Label */}
@@ -55,102 +55,98 @@ const About = () => {
         </motion.div>
 
         {/* Right Column: The Data List */}
-        <div className="md:col-span-9 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 md:gap-y-8">
-          
-          {/* LEFT SUB-COLUMN */}
-          <div className="flex flex-col gap-8 md:gap-10">
-            {/* 01. EDUCATION */}
-            <motion.div style={{ y: y2, opacity: opacity2 }} className="flex flex-col gap-2">
-              <h3 className="font-sans text-xs md:text-sm font-bold uppercase tracking-wide opacity-100 mb-1 text-black/70">
-                01. Education
-              </h3>
-              <div className="flex flex-col">
+        <div className="md:col-span-9 lg:col-span-9 flex flex-col gap-5 md:gap-6">
+
+          {/* 01. EDUCATION */}
+          <motion.div style={{ y: y2, opacity: opacity2 }} className="flex flex-col gap-1 md:gap-2">
+            <h3 className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-wide opacity-100 mb-0 md:mb-1 text-black/70">
+              01. Education
+            </h3>
+            <div className="flex flex-col">
+              <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                SR University, Ananthsagar, Telangana
+              </p>
+              <p className="font-sans text-xs md:text-base lg:text-lg font-normal text-black/70 leading-tight tracking-tight mt-0.5">
+                B.Tech, Computer Science & Engineering — Data Science (2023–2027)
+              </p>
+              <p className="font-sans text-[10px] md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-0.5">
+                CGPA: 8.1/10
+              </p>
+            </div>
+          </motion.div>
+
+          {/* 02. CERTIFICATIONS */}
+          <motion.div style={{ y: y3, opacity: opacity3 }} className="flex flex-col gap-1 md:gap-2">
+            <h3 className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-wide opacity-100 mb-0 md:mb-1 text-black/70">
+              02. Certifications
+            </h3>
+            <div className="flex flex-col gap-2 md:gap-3">
+              <div>
                 <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                  SR University, Ananthsagar, Telangana
+                  AWS Certified AI Practitioner (AIF-C01)
                 </p>
-                <p className="font-sans text-sm md:text-lg lg:text-xl font-normal text-black/70 leading-tight tracking-tight mt-1">
-                  B.Tech, Computer Science & Engineering — Data Science (2023–2027)
-                </p>
-                <p className="font-sans text-xs md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-1">
-                  CGPA: 8.1/10
+                <p className="font-sans text-[10px] md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-0.5">
+                  Foundational understanding of AI services, workflows, and responsible AI principles on AWS
                 </p>
               </div>
-            </motion.div>
-
-            {/* 03. EXPERIENCE */}
-            <motion.div style={{ y: y4, opacity: opacity4 }} className="flex flex-col gap-2">
-              <h3 className="font-sans text-xs md:text-sm font-bold uppercase tracking-wide opacity-100 mb-1 text-black/70">
-                03. Experience
-              </h3>
-              <div className="flex flex-col gap-6">
-                <div>
-                  <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                    Bluestock Fintech
-                  </p>
-                  <p className="font-sans text-sm md:text-lg lg:text-xl font-normal text-black/70 leading-tight tracking-tight mt-1">
-                    Software Development Engineer Intern (Nov 2025 – Dec 2025)
-                  </p>
-                  <p className="font-sans text-xs md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-1">
-                    Fintech data pipelines · Python automation · 30% report accuracy improvement
-                  </p>
-                </div>
+              <div>
+                <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                  Microsoft Certified: Azure AI Fundamentals
+                </p>
+                <p className="font-sans text-[10px] md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-0.5">
+                  Cloud & AI service exposure aligned with enterprise technology
+                </p>
               </div>
-            </motion.div>
-          </div>
-
-          {/* RIGHT SUB-COLUMN */}
-          <div className="flex flex-col gap-8 md:gap-10">
-            {/* 02. CERTIFICATIONS */}
-            <motion.div style={{ y: y3, opacity: opacity3 }} className="flex flex-col gap-2">
-              <h3 className="font-sans text-xs md:text-sm font-bold uppercase tracking-wide opacity-100 mb-1 text-black/70">
-                02. Certifications
-              </h3>
-              <div className="flex flex-col gap-4">
-                <div>
-                  <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                    AWS Certified AI Practitioner (AIF-C01)
-                  </p>
-                  <p className="font-sans text-xs md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-1">
-                    Foundational understanding of AI services, workflows, and responsible AI principles on AWS
-                  </p>
-                </div>
-                <div>
-                  <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                    Microsoft Certified: Azure AI Fundamentals
-                  </p>
-                  <p className="font-sans text-xs md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-1">
-                    Cloud & AI service exposure aligned with enterprise technology
-                  </p>
-                </div>
-                <div>
-                  <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                    Oracle Data Platform 2025 — Foundations Associate
-                  </p>
-                  <p className="font-sans text-xs md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-1">
-                    Data warehousing & platform architecture foundations
-                  </p>
-                </div>
+              <div>
+                <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                  Oracle Data Platform 2025 — Foundations Associate
+                </p>
+                <p className="font-sans text-[10px] md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-0.5">
+                  Data warehousing & platform architecture foundations
+                </p>
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
-            {/* 04. FOCUS */}
-            <motion.div style={{ y: y5, opacity: opacity5 }} className="flex flex-col gap-2">
-              <h3 className="font-sans text-xs md:text-sm font-bold uppercase tracking-wide opacity-100 mb-1 text-black/70">
-                04. Focus
-              </h3>
-              <ul className="flex flex-col gap-1">
-                <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                  Full Stack Software Engineering
-                </li>
-                <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                  Cloud & AI-Powered Applications
-                </li>
-                <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
-                  Fintech & Data Systems
-                </li>
-              </ul>
-            </motion.div>
-          </div>
+          {/* 03. EXPERIENCE */}
+          <motion.div style={{ y: y4, opacity: opacity4 }} className="flex flex-col gap-1 md:gap-2">
+            <h3 className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-wide opacity-100 mb-0 md:mb-1 text-black/70">
+              03. Experience
+            </h3>
+
+            <div className="flex flex-col gap-2 md:gap-3">
+              <div>
+                <p className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                  Bluestock Fintech
+                </p>
+                <p className="font-sans text-xs md:text-base lg:text-lg font-normal text-black/70 leading-tight tracking-tight mt-0.5">
+                  Software Development Engineer Intern (Nov 2025 – Dec 2025)
+                </p>
+                <p className="font-sans text-[10px] md:text-sm font-normal text-black/50 leading-tight tracking-tight mt-0.5">
+                  Fintech data pipelines · Python automation · 30% report accuracy improvement
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* 04. FOCUS */}
+          <motion.div style={{ y: y5, opacity: opacity5 }} className="flex flex-col gap-1 md:gap-2">
+            <h3 className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-wide opacity-100 mb-0 md:mb-1 text-black/70">
+              04. Focus
+            </h3>
+            <ul className="flex flex-col gap-0.5 md:gap-1">
+              <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                Full Stack Software Engineering
+              </li>
+              <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                Cloud & AI-Powered Applications
+              </li>
+              <li className="font-sans text-base md:text-xl lg:text-2xl font-bold leading-tight tracking-tight text-black">
+                Fintech & Data Systems
+              </li>
+            </ul>
+          </motion.div>
+
         </div>
       </div>
     </section>
