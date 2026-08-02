@@ -132,7 +132,7 @@ const ResumeSection = () => {
               <div className="grid grid-cols-3 gap-4 mt-4">
                 {[
                   { value: "3+", label: "Certifications" },
-                  { value: "4+", label: "Projects" },
+                  { value: "5+", label: "Projects" },
                   { value: "8.1", label: "CGPA" },
                 ].map(({ value, label }) => (
                   <motion.div
